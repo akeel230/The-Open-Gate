@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Open Gate | Projects</title>
+</head>
+<body>
+     <!--Navbar-->
+
+  <nav class="bg-black container-fluid py-2">
+    <div class=" flow-root max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="pt-3 items-center h-16">
+        <div class=" sm:hidden flex justify-between">
+          <!-- Mobile menu button-->
+        
+          <h1 class="font-bold text-white px-4 text-2xl sm:pt-10 md:pb-3 px-2">The Open Gate</h1>
+          <a href="https://register.theopengate.org/"
+          class="text-gray-900 bg-gray-500 hover:bg-gray-700 hover:text-white block text-center text-md p-2">Join
+          Us <i class="fas fa-hands-helping"></i></a>
+          <button type="button"
+            class=" float-right text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <a href="javascript:void(0);" class="icon flex" onclick="myFunction()">
+              <i class="fas fa-align-justify p-3"></i>
+            </a>
+          </button>
+        </div>
+
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
+          <div class="hidden sm:block sm:ml-10">
+            <div class="flex space-x-10">
+                <a href="#" class="text-gray-300 hover:bg-gray-300 hover:text-black px-3 py-2 text-md font-medium">Home <i
+                    class="fas fa-home"></i></a>
+
+                  <a href="Projects.html"
+                class="text-gray-300 bg-gray-700 px-3 py-2 px-1 text-md font-medium"  aria-current="page" target="_blank">Projects <i
+                  class="fas fa-tasks"></i><span
+                  class="inline-block bg-green-500 rounded-full text-sm font-semibold px-1  ml-2 ">New!</span></a>
+
+              <a href="#" class="text-gray-300 hover:bg-gray-300 hover:text-black px-3 py-2 text-md font-medium"
+                target="_blank">Teams <i class="fas fa-users"></i><span
+                class="inline-block bg-red-600 rounded-full text-sm font-semibold px-1  ml-2 ">maintenance</span></a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-300 hover:text-black px-3 py-2  text-md font-medium">Calendar <i
+                  class="far fa-calendar-alt"></i><span
+                  class="inline-block bg-red-600 rounded-full text-sm font-semibold px-1 ml-2 ">maintenance</span></a>
+            </div>
+          </div>
+          <ul class="flex-1 flex justify-center md:justify-end list-reset py-2">
+            <li class="ml-8 hidden md:inline text-left">
+              <a href="https://register.theopengate.org/" target="_blank"
+                class="text-md font-bold px-4 py-2 no-underline text-white bg-gray-500 hover:bg-gray-200 hover:text-black text-center">Join
+                Us <i class="fas fa-hands-helping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Java Script-->
+
+  <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("mobile-menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/336a975252.js" crossorigin="anonymous"></script>
+</body>
+</html>
