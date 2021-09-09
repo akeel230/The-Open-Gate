@@ -1,2 +1,2 @@
 # public
-blas
+Official Website of The Open Gate 
