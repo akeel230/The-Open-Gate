@@ -150,14 +150,92 @@
   </div>
 
   <hr>
-  <!--Animation Join Us-->
+  <!--Animation Join Us--> 
+    <section class="container  max-w-lg md:max-w-5xl items-center static mx-auto p-8">
+        <h1 class="text-4xl md:text-5xl text-gray-700 font-semibold text-center md:pt-5 pb-5">Gallery<i class="fas fa-images animate-pulse"></i></h1>
+      <div class="carousel relative shadow-xl flex bg-white">
+        <div class="carousel-inner">
+          <!--Slide 1-->
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+          <div class="carousel-item opacity-0 absolute">
+            
+              <img src="Photos/cover.jpg" alt=""></div>
+            
+          <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+          <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+          
+          <!--Slide 2-->
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item  opacity-0 absolute">
+            
+            <img src="Photos/dry.jpg"  alt=""></div>
+          
+          <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+          <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+          
+          <!--Slide 3-->
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item  opacity-0 absolute" >
+            
+              <img src="Photos/schol.jpg"  alt=""></div>
+            
+          <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+          <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+          <!-- Add additional indicators for each slide-->
+          <ol class="carousel-indicators">
+            <li class="inline-block mr-3">
+              <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+            <li class="inline-block mr-3">
+              <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+            <li class="inline-block mr-3">
+              <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+          </ol>
+          
+        </div>
+      </div>
+      <style>
+        .carousel-open:checked + .carousel-item {
+          position: static;
+          opacity: 100;
+        }
+        .carousel-item {
+          -webkit-transition: opacity 0.6s ease-out;
+          transition: opacity 0.6s ease-out;
+        }
+        #carousel-1:checked ~ .control-1,
+        #carousel-2:checked ~ .control-2,
+        #carousel-3:checked ~ .control-3 {
+          display: block;
+        }
+        .carousel-indicators {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          bottom: 2%;
+          left: 0;
+          right: 0;
+          text-align: center;
+          z-index: 10;
+        }
+        #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+        #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+        #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+          color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+        }
+      </style>
+    </section>
      
   <!--Google Map Location-->
   <section class="row pt-5 mx-auto p-2 pb-8 bg-gray-200">
     <div class="space-y-10 md:space-y-0 lg:grid lg:grid-cols-2">
       
       <div class="lg:pb-10">
-        <h1 class="text-4xl md:text-5xl text-gray-700 font-semibold text-center md:pt-10 pb-8">Our Headquarters</h1>
+        <h1 class="text-4xl md:text-5xl text-gray-700 font-semibold text-center md:pt-10 pb-8">Our Headquarters <i class="fas fa-map-marked-alt animate-pulse"></i></h1>
         <p class="text-center">The Open Gate’s Headquarters, also what we refer as TOG Home is situated in D.S. Senanayake Veediya, Kandy.</br>
             <p class="text-xl text-bold pt-5 pb-5 text-center">We are open from 9.00am to 4.00pm on week days and 9.00am to 1.00pm on Saturdays.</p>
             <p class="text-center px-4 pb-10">Nevertheless, we have a quick responding team to aid you whenever you reach us through our social media platforms.
